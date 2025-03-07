@@ -1,0 +1,1814 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   {% load static %}
+    <meta charset="UTF-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+       <title>Document</title>
+  
+    <style>
+        *{
+            font-family: 'poppins',sans-serif;
+            
+        }
+        .hero-section {
+            background: var(--Our-Back5, #111);
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            align-items: center;
+          }
+          
+          .hero-banner {
+            display: flex;
+            flex-direction: column;
+            align-self: stretch;
+            position: relative;
+            min-height: 400px;
+            width: 100%;
+            padding-bottom: 378px;
+          }
+          
+          .hero-image {
+            position: absolute;
+            inset: 0;
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            
+            
+          }
+          
+          .hero-content {
+            position: relative;
+            display: flex;
+            width: 545px;
+            max-width: 100%;
+            flex-direction: column;
+            margin: 170px 0 90px 110px;
+          }
+          
+          .hero-title {
+            color: #fff;
+            font: 600 50px/62px Kanit, sans-serif;
+            font-size: 62px;
+            width: 700px;
+            padding-top: 150px;
+                   
+          }
+          .hero-title1 {
+            color: #fff;
+            font: 600 50px/62px Kanit, sans-serif;
+            font-size: 62px;
+            width: 700px;
+            padding-top: 10px;
+                   
+          }
+          
+          .cta-button {
+            align-self: stretch;
+            border-radius: 12px;
+            margin-top: 30px;
+            min-height: 58px;
+            width: 335px;
+            max-width: 100%;
+            color:var(--aqua-blue, #6dc7c1);
+            padding: 0 10px;
+            background: transparent;
+            border: 2px solid var(--aq-g, #6dc7c1);
+            font: 400 24px/58px 'Poppins', sans-serif;
+          }
+          
+          .section-title {
+            color: #fff;
+            text-align: center;
+            margin-top: 200px;
+            font: 500 34px/1 'Poppins', sans-serif;
+          }
+          
+          .services-grid {
+            margin-top: 100px;
+            width: 100%;
+            max-width: 1220px;
+            display: flex;
+            gap: 20px;
+          }
+          
+          .service-card {
+            border-radius: 2px;
+            border: 2px solid var(--aq-g, #6dc7c1);
+            display: flex;
+            flex-grow: 1;
+            flex-direction: column;
+            overflow: hidden;
+            color: var(--Our-white7, #f7f7f7);
+            text-transform: capitalize;
+            width: 408px;height:488px;
+            padding: 2px 1px 43px;
+            font: 400 16px/28px Poppins, sans-serif;
+          }
+          
+          .service-image {
+            aspect-ratio: 1.8;
+            object-fit: contain;
+            width: 100%;
+          }
+          
+          .service-description {
+            margin: 20px 35px 0 20px;
+          }
+          
+          .stats-container {
+            display: flex;
+            margin-top: 100px;
+            min-height: 100px;
+            width: 100%;
+            max-width: 1220px;
+            align-items: center;
+            gap: 40px 168px;
+            text-align: center;
+            justify-content: center;
+            flex-wrap: wrap;
+          }
+       
+          .stat-item {
+            align-self: stretch;
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            font-family: Poppins, sans-serif;
+            width: 219px;
+            margin: auto 0;
+          }
+          
+          .stat-number {
+            color: #fff;
+            font-size: 48px;
+            font-weight: 500;
+            line-height: 0.5;
+          }
+          
+          .stat-label {
+            color: var(--aqua-blue, #6dc7c1);
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 1;
+            margin-top: 26px;
+          }
+          
+          .testimonials-section {
+            margin-top: 100px;
+            width: 100%;
+            max-width: 1182px;
+          }
+          
+          .testimonial-slider {
+            display: flex;
+            width: 100%;
+            align-items: center;
+            gap: 40px;
+          }
+          
+          
+          
+          
+          
+          .testimonial-cards {
+            display: flex;
+            gap: 74px;
+            overflow: hidden;
+            transition: transform 0.5s ease-in-out;
+          }
+          
+          .testimonial-card {
+            border-radius: 2px;
+            border: 2px solid var(--aq-g, #6dc7c1);
+            background: linear-gradient(180deg, #3d706c 0%, rgba(19, 19, 19, 0.41) 100%);
+            width: 290px;
+            min-width: 240px;
+            display: none;
+          }
+          .testimonial-card.active {
+            display: block; /* Show only active cards */
+          }
+          
+          .testimonial-image {
+            aspect-ratio: 0.81;
+            width: 100%;
+            object-fit: contain;
+          }
+          
+          .testimonial-quote {
+            color: var(--Our-white7, #f7f7f7);
+            text-align: center;
+            font: 400 20px/28px Poppins, sans-serif;
+            margin-top: 50px;
+          }
+          
+          .footer-section {
+           
+            width: 100%;
+            padding: 40px 80px;
+            margin-top: 1187px;
+          }
+        
+          
+          @media (max-width: 591px) {
+            .hero-banner {
+              max-width: 100%;
+              padding-bottom: 100px;
+            }
+          
+            .hero-content {
+              margin: 40px 0 10px;
+            }
+          
+            .hero-title {
+              font-size: 38px;
+              line-height: 55px;
+              margin-left: 20px;
+            }
+            .hero-title1 {
+              font-size: 38px;
+              margin-top: -15px;
+              line-height: 55px;
+              margin-left: 20px;
+            }
+            .section-title {
+              margin-top: 40px;
+              
+            }
+            .cta-button{
+             width: 200px;
+             margin-left: 20px;
+            }
+          
+            .services-grid {
+              flex-direction: column;
+              margin-top: 40px;
+            }
+          
+            .service-card {
+              width: 378px;
+              margin-top: 20px;
+              margin-left: 15px;
+            }
+          
+            .stats-container {
+              margin-top: 40px;
+              margin-left: 100px;
+              
+            }
+          
+            .stat-number {
+              font-size: 40px;
+            }
+          
+            .testimonials-section {
+              margin-top: 40px;
+            margin-left: 50px;
+            
+             
+            }
+            .testimonials-card{
+              margin-left: 50px;
+            }
+            .testimonials-cards{
+             justify-content: center;
+           
+            }
+          
+            .footer-section {
+              margin-top: 40px;
+              padding: 0 20px;
+            }
+          }
+          .con{
+            background-color: #3d706c;
+           padding-top: 100px;
+           padding-bottom: 100px;
+           
+          }
+          .sectioncontainer {
+            width: 100%;
+          }
+          .content-wrap {
+            gap: 20px;
+            display: flex;
+          }
+          .left-colum {
+            display: flex;
+            flex-direction: column;
+            line-height: normal;
+            width: 50%;
+            margin-left: 40px;
+          }
+          .featurecard {
+            border: 2px solid var(--aq-g, #6dc7c1);
+            box-shadow: 0px 8px 20px 0px rgba(58, 58, 58, 0.25);
+            display: flex;
+            flex-grow: 1;
+            flex-direction: column;
+            overflow: hidden;
+            font-family: 'Poppins', sans-serif;
+            text-transform: capitalize;
+            width: 600px;
+            height: 390px;
+            margin-left: 220px;
+           
+          
+            
+          }
+       
+          .imagecontainer {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            min-height: 200px;
+            width: 100%;
+            
+            padding-top: 280px;
+          }
+          .featureimage {
+            position: absolute;
+            inset: 0;
+            height: 100%;
+            width: 100%;
+            
+            object-fit: cover;
+            object-position: center;
+          }
+          .textoverlay {
+            position: relative;
+            background-color: rgba(0, 0, 0, 0.75);
+            display: flex;
+         
+            flex-direction: column;
+
+            align-items: start;
+            padding: 27px 80px 27px 20px;
+          }
+          .headingprimary {
+            color: white;
+            font-size: 34px;
+            font-weight: 600;
+            line-height: 1;
+            margin-top: -15px;
+          }
+          .headingaccent {
+            color: var(--aq-g, #6dc7c1);
+          }
+          .headingsecondary {
+            color: var(--Our-white7, #f7f7f7);
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 1.4;
+            margin-top: -7px;
+          }
+          .rightcolumn {
+            display: flex;
+            flex-direction: column;
+            line-height: normal;
+            width: 50%;
+            margin-left: 20px;
+          }
+          .descriptiontext {
+          height: 100px;
+          width:600px;
+         
+            align-self: stretch;
+            color: var(--Our-white7, #f7f7f7);
+            text-transform: capitalize;
+            margin: auto 0;
+            margin-left: 2px;
+            font: 400 20px/34px 'Poppins', sans-serif;
+          }
+          @media (min-width: 1400px) and (max-width: 2000px) {
+            .featurecard {
+             
+            margin-left: 120px;
+            }
+            .descriptiontext {
+            
+              
+            }
+            .aboutdescription{
+              margin-top: -50px;
+              width: 87%;
+
+
+            }
+            .aboutimage{
+              margin-top: -50px;
+            }
+          
+          }
+
+          
+          @media (max-width: 991px) {
+            .sectioncontainer {
+              max-width: 100%;
+            }
+            .slider-rightarrow-icon{
+              margin-right: 25px;
+            }
+            .slider-leftarrow-icon{
+              margin-left: 25px;
+            }
+            .content-wrap {
+              flex-direction: column;
+              align-items: stretch;
+              gap: 0;
+            }
+            .left-colum,
+            .rightcolumn {
+              width: 100%;
+              margin-left: 0;
+            }
+            .featurecard {
+              max-width: 45%;
+              height: 240px;
+              margin-top: -55px;
+              margin-bottom: 40px;
+          margin-left: 230px;
+            }
+            .imagecontainer {
+              max-width: 100%;
+              padding-top: 100px;
+            }
+            .textoverlay {
+              max-width: 100%;
+              margin-top: 60px;
+              padding: 27px 20px;
+            }
+            .descriptiontext {
+              width: 42%;
+              margin-top: 31px;
+              margin-left: 240px;
+            }
+            .con{
+              margin-top: 50px;
+                margin-bottom: 20px;
+                padding-bottom: 5px;
+               
+              
+            }
+            
+          }
+          .aboutcontainer {
+            margin: 100px 0 0;
+          }
+          .aboutcontent {
+            gap: 20px;
+            display: flex;
+          }
+          .about-text-wrap {
+            display: flex;
+            flex-direction: column;
+            line-height: normal;
+            width: 50%;
+          }
+       
+          .aboutdescription {
+            height: 379px;
+            width: 80%;
+            align-self: stretch;
+            color: var(--Our-white7, #f7f7f7);
+            text-transform: capitalize;
+            margin: auto 0;
+            margin-right: 250px;
+            font: 400 20px/34px Poppins, sans-serif;
+            margin-left: 165px;
+            margin-bottom: 40px;
+
+          }
+          .about-image-wrap {
+            display: flex;
+            flex-direction: column;
+            line-height: normal;
+            width: 50%;
+            margin-left: 20px;
+          }
+          .aboutimage {
+            aspect-ratio: 1.5;
+            object-fit: contain;
+            object-position: center;
+            width: 600px;
+            height: 400px;
+            margin-left: 5px;
+        
+            flex-grow: 1;
+          }
+          @media (max-width: 991px) {
+            .aboutcontainer {
+              max-width: 100%;
+              padding-bottom: 0px;
+              margin-top: 40px;
+            }
+            .aboutcontent {
+              flex-direction: column;
+             
+              gap: 0;
+            }
+            .about-text-wrap {
+              width: 100%;
+            }
+            .aboutdescription {
+              width: 42%;
+              max-width: 100%;
+              margin-top: 750px;
+              margin-left: 239.99px;
+            }
+            .about-image-wrap{
+              width: 100%;
+            }
+            .aboutimage {
+            position: relative;
+           margin-left: 110px;
+           margin-top: 10px;
+            bottom:689px;
+            right: 17px;
+            height: 250px;
+            }
+          }
+          .container {
+            width: 100%;
+            max-width: 100%;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            color: #fff;
+            padding-left: 20%;
+            padding-right: -100px;
+         
+            background: var(--Our-Back5, #111);
+            border-radius: 10px;
+            padding-top: 50px;
+            padding-bottom: 50px;
+         
+        }
+
+        .t1 {
+            grid-column: span 2;
+            text-align: center;
+            font-size: 34px;
+            margin-right: 255px;
+           
+           
+        }
+
+        .t1 span {
+            color: #00bfa6;
+        }
+
+        .p1 {
+            grid-column: span 2;
+            text-align: center;
+            font-size: 15px;
+            color: #ccc;
+            margin-left:-250px;
+        }
+
+        .p1.a {
+            color: #00bfa6;
+            text-decoration: none;
+        }
+
+        label {
+            font-size: 14px;
+            margin-bottom: 5px;
+            display: block;
+            text-align:start;
+        }
+
+        input, textarea {
+            width: 156%;
+            padding: 10px 5px;
+            margin-bottom: 20px;
+            border: none;
+            border-bottom: 1px solid #F7F7F7;
+            background-color: transparent;
+            color: #fff;
+            font-size: 14px;
+        }
+
+        input:focus, textarea:focus {
+            outline: none;
+            border-bottom: 2px solid #00bfa6;
+        }
+
+        textarea {
+            resize: none;
+            height: 50px;
+        }
+
+        .submit-btn {
+            grid-column: span 2;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            margin-top: 50px;
+            margin-left: 400px;
+            background: var(--aq-g, linear-gradient(153deg, #6DC7C1 0%, #519490 26%,#35615E 92%));
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+            text-align: center;
+            width: 100px;
+        }
+
+        .submit-btn:hover {
+            background-color: #009e89;
+        }
+        
+      
+        /* Mobile view adjustments */
+        @media only screen and (max-width: 768px) {
+            .container {
+                display: block;
+                padding: 20px;
+              margin-left: 10px;
+                margin-top: 100px;
+            }
+            .li{
+              width: 150%;
+            }
+
+            .t1{
+                font-size: 28px;
+                margin-right: -5%;
+                margin-left: 0;
+                position: relative;
+                margin-bottom: 100px;
+                margin-left: 40px;
+                right:40px
+             
+                
+                
+            }
+
+            .p1{
+                position: relative;
+                
+              
+                bottom: 70px;
+                margin-left:-10px;
+           
+               
+            }
+
+            label {
+                font-size: 12px;
+            }
+
+            input, textarea {
+                width: 60%;
+            }
+
+            .submit-btn {
+                width: 60%;
+                margin-left: 0;
+                padding: 15px;
+                font-size: 18px;
+            }
+            .footer-section{
+                margin-top: 400px;
+            }
+         
+         
+        }
+        .navbar-brand {
+          display: flex;
+          align-items: center;
+          margin-right: 20px;
+          font-family: "Kumbh Sans", serif;
+        }
+        
+        .brand-tagline {
+          font-size: 14px;
+          color: #6DC7C1;
+          margin-left: 10px;
+        
+        }
+        
+        .navbar-nav {
+          margin: 0 20px;
+        }
+        
+        .enquire-btn {
+          background-color: #6DC7C1;
+          border: none;
+          color: white;
+          width: 188px;
+          height: 48px;
+          border-radius: 10px;
+          
+        }
+        
+        
+        
+        .offcanvas-body {
+            background: var(--aq-g, linear-gradient(153deg, #519490 0%, #519490 61%,#111F1E 100%));
+           color: #fff;
+           margin-top: 20px;
+           font-family:'poppins'sans-serif;
+           
+         }
+         
+         .offcanvas .nav-link {
+           color: aqua blue;
+           margin-bottom: 10px;
+          
+         }
+        
+        .navbar-toggler {
+          border: none;
+        }
+        
+        @media (max-width: 768px) {
+          .na,
+          .enquire-btn.ms-3 {
+              display: none;
+          }
+          .navbar-toggler{
+              margin-right: -40px;
+          }
+          .navbar-brand{
+              margin-left: -30px;
+          }
+          
+        }
+        
+.sidebar {
+  background: #02413446 100%;
+  padding: 15px;
+
+  height: 420px;
+  transition: top 0.1s ease-in-out;
+
+}
+.sidebar.visible {
+  top: 0; /* Slide into view */
+}
+
+.sidebar a {
+  display: block;
+  color: #6DC7C1;
+  text-decoration: none;
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  transition: color 0.3s ease;
+}
+
+.sidebar a:hover {
+  color: #fff;
+}
+
+.sidebar a::after {
+ 
+  float: right;
+  margin-left: -60px;
+  color: #6DC7C1;
+}
+
+/* Dynamic Content */
+.dynamic-content h5 {
+  color: #6DC7C1;
+  margin-bottom: 10px;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.dynamic-content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.dynamic-content li {
+  margin-bottom: 10px;
+}
+
+.dynamic-content a {
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.3s ease;
+}
+
+.dynamic-content a:hover {
+  color: #6DC7C1;
+  text-decoration: underline;
+}
+
+/* Dividers */
+.divider {
+  border-left: 1px solid #6DC7C1;
+  height: 100%;
+}
+.custom-margin{
+  margin-top: 100px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .sidebar {
+      text-align: center;
+  }
+
+  .sidebar a::after {
+      display: none; /* Hide the '>' arrow in mobile view */
+  }
+
+  .dynamic-content {
+      flex-direction: column;
+      gap: 20px;
+      height: 800px;
+  }
+
+  .divider {
+      display: none; /* Hide dividers in mobile view */
+  }
+}
+.footer {
+ 
+  color: #d1d1d1;
+  padding: 20px 0;
+  text-align: center;
+}
+.foot {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 0; /* Reset margin for mobile */
+}
+.foot span {
+  font-weight: bold;
+  color: #6DC7C1;
+  margin-bottom: 10px; /* Add spacing between elements */
+}
+.foot div {
+  display: flex;
+  gap: 15px; /* Add spacing between icons */
+}
+.foot div a img {
+  height: 20px;
+  vertical-align: middle;
+}
+.footer div {
+  margin-bottom: 10px;
+}
+@media (min-width: 768px) {
+  .foot {
+      flex-direction: row;
+      justify-content: flex-end;
+      margin-left: auto;
+  }
+  .foot span {
+      margin-right: 15px;
+      margin-bottom: 0; /* Remove extra spacing for desktop */
+  }
+}
+.foote {
+  margin-left: 900px;
+}
+
+/* Responsive styling for mobile view */
+@media (max-width: 768px) {
+  .foote {
+      margin-left: 250px;
+      margin-top: -100px; /* Center the content on smaller screens */
+     /* Center align text */
+      padding: 10px; /* Add some padding for better spacing */
+  }
+  .footlink{
+    font-size: 11px;
+  }
+}
+
+.testimonial-slider {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  padding: 50px;
+}
+
+.testimonial-cards {
+  display: flex;
+  transition: transform 0.5s ease;
+  width: 100%;
+}
+
+.testimonial-card {
+  width: 33.33%; /* Show 3 images at once */
+  padding: 0 10px;
+}
+
+.testimonial-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.slider-leftarrow-icon, .slider-rightarrow-icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  z-index: 10;
+}
+
+.slider-leftarrow-icon {
+  left: 10px;
+}
+
+.slider-rightarrow-icon {
+  right: 10px;
+}
+
+.indicator-dot {
+  width: 10px;
+  height: 10px;
+  background-color: #ddd;
+  border: none;
+  border-radius: 50%;
+  margin: 0 8px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  margin-top: 50px;
+}
+
+.indicator-dot.active {
+  width: 35px; /* Increased width when active */
+  height: 12px;
+  border-radius: 20px; /* Keep height consistent */
+  background: var(--aq-g, linear-gradient(rgba(109, 199, 193, 1),rgba(81, 148, 144, 1),rgba(53, 97, 94, 1))); /* Active color for the dot */
+ 
+}
+
+.indicator-dot:hover {
+  background-color: rgba(109, 199, 193, 1); /* Hover effect */
+}
+@media (min-width:320px)and(max-width:490px){
+  .indicator-dot{
+    width: 10px;
+    height: 10px;
+  }
+
+}
+@media (max-width: 768px) {
+  .testimonials-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically */
+    text-align: center; /* Center text */
+    width: 100%; /* Ensure it takes full width */
+    margin: 0 auto; /* Center the section */
+  }
+
+ 
+
+  .testimonial-cards {
+     /* Stack cards vertically */
+    align-items: center; 
+    margin-left: 30px;/* Center cards horizontally */
+ /* Add spacing between cards */
+  }
+
+  
+}
+      @media only screen and (min-width: 1900px) {
+.featurecard{
+  margin-left: 130px;
+}
+.descriptiontext{
+  margin-top: 20px;
+}
+.aboutdescription {
+  width: 600px;
+}
+.submit-btn{
+  margin-left:550px;
+}
+.container h1{
+  margin-left: -70px;
+}
+.container p{
+  margin-right:70px;
+}
+      }   
+        </style>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg nav "style="background-color:#00000033; backdrop-filter: blur(4px);position:fixed;z-index:10;width:100%">
+    <div class="container-fluid" style="margin-left: 50px;margin-right:50px;">
+        <div class="navbar-brand">
+            <a href="{%url 'home'%}">
+                <img src="{%static 'img/logo.png'%}" alt="Thrive Tech Logo" style="width:38px; height:47px;margin-right:10px;">
+            </a>
+            <a href="{%url 'home'%}" style="text-decoration: none;">
+            <div>
+                <div style="color: white; font-family: Kumbh Sans, serif;font-weight:900;font-size:20px;letter-spacing:4px;">THRIVE TECH</div>
+                <div class="brand-tagline" style="margin-left: 15px;">Innovation in Every Step</div>
+            </div></a>
+        </div>
+
+        <button class="navbar-toggler"  type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNav" aria-controls="offcanvasNav">
+            <span><img src="{%static 'img/burger.png'%}" style="height:30px;" alt="Hamburger Icon"></span>
+        </button>
+        <div class="na">
+        <div class="navbar-nav justify-content-space-around">
+            <ul class="navbar-nav">
+                <li class="nav-item" style="margin-right: 40px;">
+                    <a class="nav-link" href="#"onclick="showMain()" style="color: white;">What we Do<img src="{%static 'img/icon.png'%}" style="margin-left: 5px;" alt=""></a>
+                    
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" style="color: white;" href="{%url 'whoweare'%}">Who we are</a>
+                </li>
+                <li class="nav-item"style="margin-left: 40px;">
+                    <a class="nav-link"  style="color: white;"href="{%url 'career'%}">Careers</a>
+                </li>
+            </ul>
+        </div></div>
+        <div class="enquire-btn ms-3">
+          <a href="#enquire" style="color: white;text-decoration:none"><button style="background: var(--aq-g, linear-gradient(rgba(109, 199, 193, 1),rgba(81, 148, 144, 1),rgba(53, 97, 94, 1)));"  class="enquire-btn">Enquire</button></a>
+        </div>
+    </div>
+</nav>
+
+<div class="offcanvas offcanvas-end" style="margin-top: -0px;background: var(--aq-g, linear-gradient(153deg, #519490 0%, #519490 61%,#111F1E 100%));" tabindex="-1" id="offcanvasNav" aria-labelledby="offcanvasNavLabel" style="background: var(--aq-g, linear-gradient(153deg, #519490 0%, #4A8783 29%,#437A77 55%, #336D6A 73%,#111F1E 120%));">
+
+  <div class="offcanvas-body">
+    <button type="button" class="btn-close btn-close-white" style="margin-left: 330px;" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+
+    <!-- Main Menu -->
+    <ul class="navbar-nav" style="font-size: 20px;"id="mainMenu">
+        <li class="nav-item">
+            <a class="nav-link" style="font-size: 25px;font-family:'poppins'sans-serif;" href="#" id="whatWeDoBtn">What we Do
+                <img src="{%static 'img/icon.png'%}" style="margin-left: 150px;" alt="">
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" style="font-size: 25px;" href="{%url 'whoweare'%}">Who we are</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" style="font-size: 25px;" href="{%url 'career'%}">Careers</a>
+        </li>
+        <a href="home.html#enquire" style="color: white;text-decoration:none"><button style="background: var(--aq-g, linear-gradient(rgba(109, 199, 193, 1),rgba(81, 148, 144, 1),rgba(53, 97, 94, 1)));"  class="enquire-btn">Enquire</button></a>
+
+    </ul>
+    
+    <!-- What We Do Menu -->
+    <ul class="navbar-nav d-none" style="font-size: 20px;" id="whatWeDoMenu">
+      <li class="nav-item">
+        <a class="nav-link" href="#" id="backBtn" style="height: 40px; width: 40px;">
+          <i class="fas fa-arrow-left"></i>
+        </a>
+      </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#" style="font-size: 20px;" id="atlassianSupportBtn">Atlassian Support <img src="{%static 'img/icon.png'%}" style="margin-left: 120px;" alt=""></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" style="font-size: 20px;" href="#" id="uxUiBtn">UX/UI Designing <img src="{%static 'img/icon.png'%}" style="margin-left: 139px;" alt=""></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" style="font-size: 20px;" href="#" id="webBtn">Website developing<img src="{%static 'img/icon.png'%}" style="margin-left: 102px;"></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" style="font-size: 20px;"  id="forgeDevBtn" href="#">Forge Developing <img src="{%static 'img/icon.png'%}" style="margin-left: 120px;"></a>
+        </li>
+       
+    </ul>
+    
+    <!-- Atlassian Support Sub-Menu -->
+    <ul class="navbar-nav d-none" style="font-size: 20px;" id="atlassianSupportMenu">
+      <li class="nav-item">
+        <a class="nav-link" href="#" id="backToWhatWeDoBtn" style="height: 40px; width: 40px;">
+          <i class="fas fa-arrow-left"></i>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link"  href="{%url 'migration'%}" id="migrationBtn">Migration </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link"  href="{%url 'helpdesk'%}" id="helpdeskServicesBtn">Helpdesk Services</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link"  href="{%url 'customersupport'%}" id="customerSupportBtn">Customer Support</a>
+      </li>
+    </ul>
+    
+    <!-- Migration Sub-Menu -->
+  
+<!-- UX/UI Sub-Menu -->
+<ul class="navbar-nav d-none"style="font-size: 20px;" id="uxUiMenu">
+  <li class="nav-item">
+    <a class="nav-link" href="#" id="backToWhatWeDoFromUxUiBtn" style="height: 40px; width: 40px;">
+      <i class="fas fa-arrow-left"></i>
+    </a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="{%url 'uiux'%}"id="uxServicesBtn">User Experience (UX) Services</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="{%url 'uiux'%}"id="uiDesignBtn">User Interface (UI) Design</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="{%url 'uiux'%}" id="designEnhancementBtn">Design Enhancement & Support</a>
+  </li>
+</ul>
+<!-- User Experience (UX) Services Sub-Menu -->
+
+<!-- Web Sub-Menu -->
+<ul class="navbar-nav d-none"style="font-size: 20px;" id="webMenu">
+  <li class="nav-item">
+    <a class="nav-link" href="#" id="backToWhatWeDoFromWebBtn" style="height: 40px; width: 40px;">
+      <i class="fas fa-arrow-left"></i>
+    </a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="{%url 'website'%}" id="frontendBtn">Frontend & User Interaction</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="{%url 'website'%}" id="backendBtn">Backend & Data Management</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="{%url 'website'%}" id="maintenanceBtn">Maintenance & Custom Solutions</a>
+  </li>
+</ul>
+
+    <!-- Forge Dev Sub-Menu -->
+<ul class="navbar-nav d-none"style="font-size: 20px;" id="forgeDevMenu">
+  <li class="nav-item">
+    <a class="nav-link" href="#" id="backToWhatWeDoFromForgeBtn" style="height: 40px; width: 40px;">
+      <i class="fas fa-arrow-left"></i>
+    </a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="{%url 'forge'%}" id="customAppDevBtn">Custom App Development & Deployment</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="{%url 'forge'%}" id="integrationAtlassianBtn">Integration with Atlassian Ecosystem</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="{%url 'forge'%}" id="secureForgeHostingBtn">Secure and Scalable Forge<br> Hosting</a>
+  </li>
+</ul>
+
+    
+  </div>
+</div>
+
+<div class="main"style="display: none;  background: var(--aq-g, linear-gradient(153deg, #519490 0%, #4A8783 29%,#437A77 55%, #336D6A 73%,#111F1E 120%));height:495px;width: 100vw;margin-top:-10px;padding-top:25px;"id="mainContent">
+  <div class="container-fluid mt-4"  >
+      <div class="row" >
+          <!-- Sidebar -->
+          <div class="col-md-3 mt-4  w-10 sidebar custom-margin"  >
+              <a href="#" onclick="showAtlassianSupport()"style="padding-top:50px;" class="link" >Atlassian Support <img src="{%static 'img/Vector.png'%}"style="float: right;
+  margin-left: -60px;
+  color: #6DC7C1;height:13px;margin-top:5px;" alt=""></a>
+              <a href="#" onclick="showAtlassianSupportui()" class="link">UX/UI Designing<img src="{%static 'img/Vector.png'%}"style="float: right;
+                margin-left: -60px;
+                color: #6DC7C1;height:13px;margin-top:5px;" alt=""></a>
+              <a href="#" onclick="showAtlassianSupportweb()" class="link">Website Developing<img src="{%static 'img/Vector.png'%}"style="float: right;
+                margin-left: -60px;
+                color: #6DC7C1;height:13px;margin-top:5px;" alt=""></a>
+              <a href="#" onclick="showAtlassianSupportforge()" class="link">Forge Developing<img src="{%static 'img/Vector.png'%}"style="float: right;
+                margin-left: -60px;
+                color: #6DC7C1;height:13px;margin-top:5px;" alt=""></a>
+          </div>
+
+          <!-- Dynamic Content -->
+          <div class="col-md-9">
+              <div id="dynamicContent" style="margin-top: 90px;margin-right:80px;" class="dynamic-content d-flex justify-content-between"></div>
+          </div>
+      </div>
+  </div>
+</div>
+
+    <div class="hero-section">
+        <div class="hero-banner" style="margin-top: 10px;">
+          <img  src="https://cdn.builder.io/api/v1/image/assets/24ccb9c0aaa340ad93860c1c7d861fdc/7d6422e08e7fa40cc32eed6e6fd7a6494833cc04cf0e1f68a501f8197fc3e6cb?apiKey=24ccb9c0aaa340ad93860c1c7d861fdc&" alt="Thrive Tech hero banner" class="hero-image" loading="lazy" />
+          <div class="hero-content" >
+            <h1 class="hero-title">
+              Empowering Teams, </h1> <h1 class="hero-title1"><span style="gap:10px;">Maximizing Time</span>
+            </h1>
+            <a href="#enquire" style="color:var(--aqua-blue, #6dc7c1);text-decoration:none"> <button class="cta-button"  style="cursor: pointer;" tabindex="0">Enquire</button></a>
+          </div>
+        </div>
+      
+        <h2 class="section-title" style="margin-top: 80px;;">Our Edge in <span style="color: #6dc7c1">Action</span></h2>
+      
+        <div class="services-grid">
+          <a href="{%url 'migration'%}" style="color: white;text-decoration:none;">
+          <div class="service-card">
+            <img src="https://cdn.builder.io/api/v1/image/assets/24ccb9c0aaa340ad93860c1c7d861fdc/d56eae0e2a9dd90847a0ee71966e79c9a2836fc31fd46315d0bcb16539660894?apiKey=24ccb9c0aaa340ad93860c1c7d861fdc&" alt="Migration Services" class="service-image" loading="lazy" />
+            <p class="service-description">Our migration services ensure a smooth transition to cloud platforms and modern infrastructure. We handle everything from data transfers to workflow automation, minimizing downtime and disruptions. Thrive Tech's expert team guarantees a secure, efficient migration tailored to your business needs</p>
+          </div></a>
+          <a href="{%url 'helpdesk'%}" style="color: white;text-decoration:none;">
+          <div class="service-card" >
+            <img src="https://cdn.builder.io/api/v1/image/assets/24ccb9c0aaa340ad93860c1c7d861fdc/3a549b1312ed2c8860da87ca61297efa28383e84aa09f13afbcc8c5f9f2f6736?apiKey=24ccb9c0aaa340ad93860c1c7d861fdc&" alt="Helpdesk Services" class="service-image" loading="lazy" />
+            <p class="service-description">Our helpdesk services provide around-the-clock support, proactive incident tracking, and quick resolutions. With a focus on reliability and responsiveness, we ensure that your operations run smoothly, giving your team the confidence and support they need to stay focused on growth</p>
+          </div>
+        </a>
+
+        <a href="{%url 'customersupport'%}" style="color: white;text-decoration:none;">
+          <div class="service-card" >
+            <img src="https://cdn.builder.io/api/v1/image/assets/24ccb9c0aaa340ad93860c1c7d861fdc/0f245d0a56d9f940a7fb89035c0bfab7e3aa3262f85bb43717e0b5850bb4c449?apiKey=24ccb9c0aaa340ad93860c1c7d861fdc&" alt="Customer Support Solutions" class="service-image" loading="lazy" />
+            <p class="service-description">Thrive Tech's customer support solutions prioritize client satisfaction at every stage, from pre-sales to post-sales. We offer multichannel support, CRM integration, and personalized service, ensuring an exceptional experience that builds trust and loyalty with every interaction</p>
+          </div>
+        </div>
+      </a>
+    
+      
+        <h2 class="section-title">Our <span style="color: #f7f7f7">Accomplishments</span></h2>
+      
+        <div class="stats-container">
+          <div class="stat-item">
+            <div class="stat-number" data-target="19">0+</div>
+            <div class="stat-label">Employees</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number" data-target="49">0+</div>
+            <div class="stat-label">Projects</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number" data-target="51">0+</div>
+            <div class="stat-label">Collaborations</div>
+          </div>
+        </div>
+        <h2 class="section-title">Why <span style="color: #6dc7c1">Thrive Tech</span></h2>
+<div class="con" style="background: var(--aq-g, linear-gradient(153deg, #6DC7C1 0%, #519490 26%,#35615E 92%)); margin-top:80px;">
+
+        <section class="sectioncontainer">
+            <div class="content-wrap">
+              <div class="left-colum">
+                <div class="featurecard">
+                  <div class="imagecontainer">
+                    <img
+                      loading="lazy"
+                      src="https://cdn.builder.io/api/v1/image/assets/24ccb9c0aaa340ad93860c1c7d861fdc/dcea7a7164ec82914f317ee0854573a15c7062ba1d63d50a2f3bb627b74bf79a?apiKey=24ccb9c0aaa340ad93860c1c7d861fdc&"
+                      class="featureimage"
+                      alt="Thrive Tech innovative solutions showcase"
+                    />
+                    <div class="textoverlay">
+                      <h2 class="headingprimary">
+                        What Sets
+                        <span class="headingaccent">Us Apart</span>
+                      </h2>
+                      <p class="headingsecondary">
+                        The Thrive Tech Advantage
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="rightcolumn">
+                <p class="descriptiontext" style=" margin-top: -15px;">
+                  At Thrive Tech, we stand out by blending cutting-edge innovation with
+                  client-focused solutions. Our expertise lies in simplifying complex
+                  challenges, ensuring seamless migrations, and delivering exceptional
+                  support. We don't just meet expectations—we exceed them by tailoring
+                  services to fit every unique need. With a commitment to excellence, we
+                  ensure reliability and precision in every project.<br/> 
+                  Our team’s dedication to continuous learning and adaptability keeps us ahead in a competitive market. Thrive Tech isn’t just a service provider
+                </p>
+              </div>
+            </div>
+          </section>
+          
+<div class="aboutcontainer">
+    <div class="aboutcontent">
+      <div class="about-text-wrap">
+        <p class="aboutdescription">
+          Thrive Tech is powered by a passion for excellence and a mindset rooted
+          in innovation. From our methodologies to our tools, every step reflects
+          precision and care. We continuously push boundaries, adopting creative
+          solutions to drive business success for our clients. Our focus on
+          quality and adaptability ensures we stay aligned with evolving industry
+          demands. Backed by a skilled team and forward-thinking approaches,                                                                                                                                       <br>
+          we deliver solutions that inspire confidence. Thrive Tech bridges the gap between today’s needs and tomorrow’s possibilities.
+        </p>
+      </div>
+      <div class="about-image-wrap">
+        <img
+          loading="lazy"
+          src="https://cdn.builder.io/api/v1/image/assets/24ccb9c0aaa340ad93860c1c7d861fdc/b6fc534c2909950a84b610631e2165b8d8c1ad14ea2a2120f0a87d1e5383cd59?apiKey=24ccb9c0aaa340ad93860c1c7d861fdc&"
+          class="aboutimage"
+          alt="Thrive Tech innovation and excellence representation"
+        />
+      </div>
+    </div>
+  </div>
+      
+</div>         
+
+
+      
+        <h2 class="section-title">What Our <span style="color: #6dc7c1">Clients Say</span></h2>
+      
+       
+        <div class="testimonials-section">
+          <div class="testimonial-slider">
+            <img src="{%static 'img/leftarrow.png'%}" alt="Left arrow" class="slider-leftarrow-icon" id="prevBtn" loading="lazy" />
+            
+            <div class="testimonial-cards" id="testimonialCards">
+              <div class="testimonial-card">
+                <img src="{%static 'img/client3.png'%}" alt="Client testimonial" class="testimonial-image" loading="lazy" />
+              </div>
+              <div class="testimonial-card">
+                <img src="https://cdn.builder.io/api/v1/image/assets/24ccb9c0aaa340ad93860c1c7d861fdc/90dc3ed675755388fbc57da421dee30b25cda441bc14fef7573e69c1eb210844" alt="Client testimonial" class="testimonial-image" loading="lazy" />
+              </div>
+              <div class="testimonial-card">
+                <img src="{%static 'img/client4.png'%}" alt="Client testimonial" class="testimonial-image" loading="lazy" />
+              </div>
+              <div class="testimonial-card">
+                <img src="{%static 'img/client1.png'%}" alt="Client testimonial" class="testimonial-image" loading="lazy" />
+              </div>
+              <div class="testimonial-card">
+                <img src="{%static 'img/client2.png'%}" alt="Client testimonial" class="testimonial-image" loading="lazy" />
+              </div>
+            </div>
+            
+            <img src="{%static 'img/rightarrow.png'%}" alt="Right arrow" class="slider-rightarrow-icon" id="nextBtn" data-target="nextBtn" loading="lazy" />
+          </div>
+        
+          <!-- Indicator Dots -->
+          <div class="d-flex justify-content-center mt-2">
+            <button type="button" class="indicator-dot active" aria-label="Slide 1" data-slide="0" data-target="nextBtn"></button>
+            <button type="button" class="indicator-dot" aria-label="Slide 2" data-slide="1" data-target="nextBtn"></button>
+            <button type="button" class="indicator-dot" aria-label="Slide 3" data-slide="2" data-target="nextBtn"></button>
+          
+          </div>
+        
+          <!-- Testimonial Quote -->
+          <blockquote class="testimonial-quote">
+            The support from Thrive Tech has been outstanding. They're responsive, knowledgeable, and have helped us streamline our processes, saving us time and resources.
+          </blockquote>
+        </div>
+        
+        <script>
+          // Function to show alert messages
+          function showAlert(message, type) {
+              alert(`${type.toUpperCase()}: ${message}`);
+          }
+      </script>
+      {% if messages %}
+          <script>
+              {% for message in messages %}
+                  showAlert("{{ message }}", "{{ message.tags }}");
+              {% endfor %}
+          </script>
+      {% endif %}
+
+        <form method="POST"  style="width:100%;" action="{% url 'home' %}" id="contact-form">
+          {% csrf_token %}
+          
+          <div  class="container"  id="enquire" style="margin-bottom: -60%; background-color: #111; margin-top: 100px">
+              <h1 class="t1">Get In Touch <span style="color:rgba(109, 199, 193, 1);">With Us</span></h1>
+              <p class="p1">Elevate customer experience by leveraging the <br>power of <span style="color: #6dc7c1"><a style="color: #6dc7c1" href="#">Digital transformation</a></span></p>
+      
+              <div class="li" style="margin-top: 20px;">
+                  <label for="name">Name</label>
+                  <input type="text" style="width: 50%;" id="name" name="name" required>
+              </div>
+      
+              <div class="li">
+                  <label for="company-name">Company Name</label>
+                  <input type="text" style="width: 50%;" id="company-name" name="company-name" required>
+              </div>
+      
+              <div class="li">
+                  <label for="email">Company Email</label>
+                  <input type="email" style="width: 50%;" id="email" name="email" required>
+              </div>
+      
+              <div class="li">
+                  <label for="mobile">Company Mobile</label>
+                  <input type="tel" style="width: 50%;" id="mobile" name="mobile" required>
+              </div>
+      
+              <div class="li">
+                  <label for="team-size">Company Size (Team size)</label>
+                  <input type="number" style="width: 50%;" id="team-size" name="team-size" required>
+              </div>
+      
+              <div class="li">
+                  <label for="products">Products</label>
+                  <input type="text" style="width: 50%;" id="products" name="products" required>
+              </div>
+      
+              <div class="li">
+                  <label for="requirements">Please Describe your requirements</label>
+                  <textarea id="requirements" name="requirements"></textarea>
+              </div>
+      
+              <button type="submit" class="submit-btn">Submit</button>
+          </div>
+      </form>
+      
+
+   
+      
+       
+      
+      <footer class="footer-section" >
+        <footer class="footer" style="margin-top:-10px;">
+          <div  class="foote">
+          <div class="foot" style="display: flex;
+          flex-direction:column;">
+         
+              <span style="margin-left: 10px;">Follow us</span>
+              <div>
+                  <a href="https://www.linkedin.com/company/thrive-tech-cuddalore/" style="text-decoration: none; color: #8a8a8a;">
+                      <img src="{%static 'img/linkedin.png'%}" alt="LinkedIn Icon">
+                  </a>
+                  <a href="https://www.instagram.com/thrive_tech_?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" style="text-decoration: none; color: #8a8a8a;">
+                      <img src="{%static 'img/insta.png'%}" alt="Instagram Icon">
+                  </a>
+              </div>
+          </div>
+          </div>
+          <div style="border-top: 1px solid #6DC7C1; margin: 20px auto; width: 80%;margin-top:-5px;"></div>
+          <div class="footlink">
+              <span style="margin-right: 15px;">Terms and Condition</span>
+              <span style="margin-right: 15px;">Privacy Policy</span>
+              <span>Cookies Policy</span>
+          </div>
+      </footer>
+        </div>
+      </footer>
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+      
+<script>
+        let lastClicked = null;
+      
+        // Select all the link elements
+        const links = document.querySelectorAll('.link');
+      
+        // Add a click event listener to each link
+        links.forEach(link => {
+            link.addEventListener('click', function(event) {
+                // Prevent the default action (e.g., navigation)
+                event.preventDefault();
+      
+                // If there is a previously clicked link, reset its color
+                if (lastClicked && lastClicked !== link) {
+                    lastClicked.style.color = ''; // Reset the color of the previous link
+                }
+      
+                // Change the color of the clicked link
+                link.style.color = 'white'; // Set the new color (you can change this color)
+      
+                // Update the last clicked link
+                lastClicked = link;
+            });
+        });
+      
+        function showMain() {
+          const mainContent = document.getElementById('mainContent');
+          
+          if (mainContent.style.display === 'none' || !mainContent.style.display) {
+            mainContent.style.display = 'block';
+            showAtlassianSupport();
+          } else {
+            mainContent.style.display = 'none';
+          }
+        }
+        
+        // Event listener to close 'mainContent' when clicking outside of it
+        document.addEventListener('click', function(event) {
+          const mainContent = document.getElementById('mainContent');
+          const navbar = document.querySelector('nav'); // Navbar element
+          if (!mainContent.contains(event.target) && !navbar.contains(event.target)) {
+            mainContent.style.display = 'none';
+          }
+        });
+      
+      
+     
+      
+      
+        function showAtlassianSupport() {
+            const content = `
+                  <div style="margin-left:10px;">
+                    <h5><a href="{%url 'migration'%}" style="color: #6DC7C1;">Migration</a></h5>
+                    <ul>
+                        <li><a href="{%url 'migration'%}">Jira Migration Assistant</a></li>
+                        <li><a href="{%url 'migration'%}">Confluence Migration Assistant</a></li>
+                        <li><a href="{%url 'migration'%}">Configuration & Workflow Migration</a></li>
+                        <li><a href="{%url 'migration'%}">Repository & CI/CD Migration</a></li>
+                        <li><a href="{%url 'migration'%}">Custom Data & App Migration</a></li>
+                        <li><a href="{%url 'migration'%}">Incident & Issue Management</a></li>
+                    </ul>
+                </div>
+               <div style="border-left: 3px solid white;margin-left:-10px; width:10%;"></div>
+                <div style="margin-left:-200px;">
+                    <h5><a href="{%url 'helpdesk'%}" style="color: #6DC7C1;">Helpdesk Services</a></h5>
+                    <ul>
+                        <li><a href="{%url 'helpdesk'%}">Incident Tracking & Resolution</a></li>
+                        <li><a href="{%url 'helpdesk'%}">On-Call Management</a></li>
+                        <li><a href="{%url 'helpdesk'%}">Post – Incident Review</a></li>
+                        <li><a href="{%url 'helpdesk'%}">Root Cause Analysis</a></li>
+                        <li><a href="{%url 'helpdesk'%}">Service Level Agreements (SLAs)</a></li>
+                        <li><a href="{%url 'helpdesk'%}">Change Request Management</a></li>
+                    </ul>
+                </div>
+                <div style="border-left: 3px solid white;margin-left:-10px; width: 10%;"></div>
+                <div style="margin-left:-200px;">
+                    <h5><a href="{%url 'customersupport'%}" style="color: #6DC7C1;">Customer Support</a></h5>
+                    <ul>
+                        <li><a href="{%url 'customersupport'%}">Pre - Sales Support</a></li>
+                        <li><a href="{%url 'customersupport'%}">Order & Purchase Support</a></li>
+                        <li><a href="{%url 'customersupport'%}">Post - Sales Support</a></li>
+                        <li><a href="{%url 'customersupport'%}">Customer Relationship Management</a></li>
+                        <li><a href="{%url 'customersupport'%}">Multichannel Support</a></li>
+                    </ul>
+                </div>
+            `;
+            document.getElementById('dynamicContent').innerHTML = content;
+        }
+      
+        function showAtlassianSupportweb() {
+            const content = `
+                <div style="margin-left:10px;margin-right:-80px">
+                    <h5><a href="{%url 'website'%}" style="color: #6DC7C1;">Frontend & User Interaction</a></h5>
+                    <ul>
+                        <li><a href="{%url 'website'%}">Responsive Frontend Development</a></li>
+                        <li><a href="{%url 'website'%}">Interactive UI Development</a></li>
+                        <li><a href="{%url 'website'%}">SEO Optimization</a></li>
+                    </ul>
+                </div>
+               <div style="border-left: 3px solid white;margin-left:40px;margin-right:21px; width:10%;"></div>
+                <div style="margin-left:-200px;">
+                    <h5><a href="{%url 'website'%}" style="color: #6DC7C1;">Backend & Data Management</a></h5>
+                    <ul>
+                        <li><a href="{%url 'website'%}">Server-Side Development</a></li>
+                        <li><a href="{%url 'website'%}">Database Integration</a></li>
+                        <li><a href="{%url 'website'%}">API Development</a></li>
+                       
+                    </ul>
+                </div>
+                <div style="border-left: 3px solid white;margin-right:115px;margin-left:-70px;width: 1%;"></div>
+                <div style="margin-left:-200px;">
+                    <h5><a href="{%url 'website'%}" style="color: #6DC7C1;">Maintenance & Custom Solutions</a></h5>
+                    <ul>
+                        <li><a href="{%url 'website'%}">Website Maintenance & Updates</a></li>
+                        <li><a href="{%url 'website'%}">CMS Integration & Customization</a></li>
+                        <li><a href="{%url 'website'%}">Custom Web Application Development</a></li>
+                        
+                    </ul>
+                </div>
+            `;
+            document.getElementById('dynamicContent').innerHTML = content;
+        }
+        function showAtlassianSupportui() {
+          const content = `
+                <div style="margin-left:10px;">
+                  <h5><a href="{%url 'uiux'%}" style="color: #6DC7C1;">User Experience (UX) Services</a></h5>
+                  <ul>
+                      <li><a href="{%url 'uiux'%}">User Research & Persona Creation</a></li>
+                      <li><a href="{%url 'uiux'%}">Usability Testing</a></li>
+                      <li><a href="{%url 'uiux'%}">Accessibility Design</a></li>
+                    
+                  </ul>
+              </div>
+             <div style="border-left: 3px solid white;margin-left:-80px; width:10%;"></div>
+              <div style="margin-left:-200px;">
+                  <h5><a href="{%url 'uiux'%}" style="color: #6DC7C1;">User Interface (UI) Design</a></h5>
+                  <ul>
+                      <li><a href="{%url 'uiux'%}">Wireframing & Prototyping</a></li>
+                      <li><a href="{%url 'uiux'%}">Visual Design & Branding</a></li>
+                      <li><a href="{%url 'uiux'%}">Interaction Design</a></li>
+                    
+                  </ul>
+              </div>
+              <div style="border-left: 3px solid white;margin-left:-30px; width: 10%;"></div>
+              <div style="margin-left:-200px;">
+                  <h5><a href="{%url 'uiux'%}" style="color: #6DC7C1;">Design Enhancement & Support</a></h5>
+                  <ul>
+                      <li><a href="{%url 'uiux'%}">Design System Creation</a></li>
+                      <li><a href="{%url 'uiux'%}">UI Optimization for Performance</a></li>
+                      <li><a href="{%url 'uiux'%}">Ongoing Design Consultation</a></li>
+            
+              </div>
+          `;
+          document.getElementById('dynamicContent').innerHTML = content;
+      }
+      function showAtlassianSupportforge() {
+        const content = `
+              <div style="margin-left:10px;">
+                <h5><a href="{%url 'forge'%}" style="color: #6DC7C1;">Custom App Development & Deployment</a></h5>
+                <ul>
+                    <li><a href="{%url 'forge'%}">Tailored Apps for Specific Use Casest</a></li>
+                    <li><a href="{%url 'forge'%}">Simplified App Deployment Process</a></li>
+                    <li><a href="{%url 'forge'%}">Enhancing User Workflows with Forge Apps</a></li>
+                    <li><a href="{%url 'forge'%}">Performance-Optimized and Scalable Solutions</a></li>
+              
+                </ul>
+            </div>
+           <div style="border-left: 3px solid white;margin-left:80px;margin-right:-20px;width:10%;"></div>
+            <div style="margin-left:-40px;">
+                <h5><a href="{%url 'forge'%}" style="color: #6DC7C1;">Integration with Atlassian Ecosystem</a></h5>
+                <ul>
+                    <li><a href="{%url 'forge'%}">Seamless Integration with Jira and Confluence</a></li>
+                    <li><a href="{%url 'forge'%}">Enabling Cross-Platform Functionality</a></li>
+                    <li><a href="{%url 'forge'%}">Boosting Team Collaboration</a></li>
+                    <li><a href="{%url 'forge'%}">APIs and Webhooks for Extended Features</a></li>
+                   
+                </ul>
+            </div>
+            <div style="border-left: 3px solid white;margin-left:60px;margin-right:20px; width: 10%;"></div>
+            <div style="margin-left:-80px;" >
+                <h5><a href="{%url 'forge'%}" style="color: #6DC7C1;">Secure and Scalable Forge Hosting</a></h5>
+                <ul>
+                    <li><a href="{%url 'forge'%}">Built-In Security for Your Apps</a></li>
+                    <li><a href="{%url 'forge'%}">Scalable Hosting on Forge Infrastructure</a></li>
+                    <li><a href="{%url 'forge'%}">Scalable Hosting on Forge Infrastructure</a></li>
+                    <li><a href="{%url 'forge'%}">Real-Time Monitoring and Issue Resolution</a></li>
+        
+                </ul>
+            </div>
+        `;
+        document.getElementById('dynamicContent').innerHTML = content;
+      }
+</script>
+      <script>
+        // Event delegation for handling menu navigation
+       document.getElementById('whatWeDoBtn').addEventListener('click', function() {
+         document.getElementById('mainMenu').classList.add('d-none');
+         document.getElementById('whatWeDoMenu').classList.remove('d-none');
+       });
+       
+       document.getElementById('backBtn').addEventListener('click', function() {
+         document.getElementById('whatWeDoMenu').classList.add('d-none');
+         document.getElementById('mainMenu').classList.remove('d-none');
+       });
+       
+       document.getElementById('atlassianSupportBtn').addEventListener('click', function() {
+         document.getElementById('whatWeDoMenu').classList.add('d-none');
+         document.getElementById('atlassianSupportMenu').classList.remove('d-none');
+       });
+       
+       document.getElementById('backToWhatWeDoBtn').addEventListener('click', function() {
+         document.getElementById('atlassianSupportMenu').classList.add('d-none');
+         document.getElementById('whatWeDoMenu').classList.remove('d-none');
+       });
+       
+ 
+     
+       
+       // Event listener to go back to the Atlassian Support Menu from the Helpdesk Services Menu
+     
+       document.getElementById('uxUiBtn').addEventListener('click', function () {
+         document.getElementById('whatWeDoMenu').classList.add('d-none');
+         document.getElementById('uxUiMenu').classList.remove('d-none');
+       });
+       
+       // Event listener to go back to the What We Do Menu from the UX/UI Menu
+       document.getElementById('backToWhatWeDoFromUxUiBtn').addEventListener('click', function () {
+         document.getElementById('uxUiMenu').classList.add('d-none');
+         document.getElementById('whatWeDoMenu').classList.remove('d-none');
+       });
+       // Event listeners for UX/UI Menu sub-menus
+       
+       // UX Services
+     
+       
+       
+       // Event listeners for Web Menu
+       document.getElementById('webBtn').addEventListener('click', function () {
+         document.getElementById('whatWeDoMenu').classList.add('d-none');
+         document.getElementById('webMenu').classList.remove('d-none');
+       });
+       
+       document.getElementById('backToWhatWeDoFromWebBtn').addEventListener('click', function () {
+         document.getElementById('webMenu').classList.add('d-none');
+         document.getElementById('whatWeDoMenu').classList.remove('d-none');
+       });
+      
+       // Event listeners for Forge Dev Sub-Menu
+       document.getElementById('forgeDevBtn').addEventListener('click', function () {
+         document.getElementById('whatWeDoMenu').classList.add('d-none');
+         document.getElementById('forgeDevMenu').classList.remove('d-none');
+       });
+       
+       document.getElementById('backToWhatWeDoFromForgeBtn').addEventListener('click', function () {
+         document.getElementById('forgeDevMenu').classList.add('d-none');
+         document.getElementById('whatWeDoMenu').classList.remove('d-none');
+       });
+       // Navigation for Forge Dev Sub-Menus
+       
+      
+       
+       
+       </script>
+       <script>
+        const animateCounter = (element) => {
+          const target = +element.getAttribute("data-target"); // Get target number
+          const speed = 200; // Increase speed (lower is faster)
+          let current = 0;
+    
+          const updateCounter = () => {
+            current += Math.ceil(target / speed); // Increment the number
+            if (current > target) {
+              element.textContent = `${target}+`; // Stop at target
+            } else {
+              element.textContent = `${current}+`;
+              requestAnimationFrame(updateCounter); // Continue animation
+            }
+          };
+          updateCounter();
+        };
+    
+        // Observe when the stats-container is in the viewport
+        const statsContainer = document.querySelector(".stats-container");
+        const statNumbers = document.querySelectorAll(".stat-number");
+        const observer = new IntersectionObserver((entries, observer) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              statNumbers.forEach(animateCounter); // Animate all counters
+              observer.disconnect(); // Stop observing after animation
+            }
+          });
+        });
+    
+        observer.observe(statsContainer);
+        
+         
+        const cardsContainer = document.getElementById('testimonialCards');
+const cards = Array.from(cardsContainer.children);
+const prevBtn = document.getElementById('prevBtn');
+const nextBtn = document.getElementById('nextBtn');
+const indicatorDots = document.querySelectorAll('.indicator-dot');
+
+let currentIndex = 0; // Initially, the first card is displayed
+const visibleCards = 3; // Display three cards at a time
+
+function updateSlider() {
+  // Update which cards are visible
+  cards.forEach((card, index) => {
+    if (index >= currentIndex && index < currentIndex + visibleCards) {
+      card.classList.add('active');
+    } else {
+      card.classList.remove('active');
+    }
+  });
+
+  // Update active indicator
+  indicatorDots.forEach((dot, index) => {
+    if (index === currentIndex) {
+      dot.classList.add('active');
+    } else {
+      dot.classList.remove('active');
+    }
+  });
+}
+
+function handleIndicatorClick(e) {
+  // Set currentIndex to the slide corresponding to the clicked indicator
+  const slideIndex = parseInt(e.target.getAttribute('data-slide'), 10);
+  currentIndex = slideIndex;
+  updateSlider();
+}
+
+prevBtn.addEventListener('click', () => {
+  currentIndex = (currentIndex - 1 + cards.length) % cards.length;
+  if (currentIndex + visibleCards > cards.length) {
+    currentIndex = cards.length - visibleCards;
+  }
+  updateSlider();
+});
+
+nextBtn.addEventListener('click', () => {
+  currentIndex = (currentIndex + 1) % cards.length;
+  if (currentIndex + visibleCards > cards.length) {
+    currentIndex = 0;
+  }
+  updateSlider();
+});
+
+// Add event listener for each indicator dot
+indicatorDots.forEach(dot => {
+  dot.addEventListener('click', handleIndicatorClick);
+});
+
+// Initialize the slider with the first set of active cards
+updateSlider();
+      </script>
+</body>
+</html>
